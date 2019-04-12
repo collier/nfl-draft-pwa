@@ -1,3 +1,7 @@
+:root {
+  --primary-color: #0081C6;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -6,9 +10,14 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  position: fixed;
+  overflow: hidden;
+  background: var(--primary-color);
+  background-color: var(--primary-color);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+.navbar {
+  background: var(--primary-color);
+  background-color: var(--primary-color);
+  color: #fff;
 }

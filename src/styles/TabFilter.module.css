@@ -1,0 +1,16 @@
+.tabFilter {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: var(--f7-navbar-height);
+  width: 100%;
+  z-index: 500;
+}
+
+.tabFilter.active {
+  display: inherit;
+}
+
+.tabFilter .list {
+  margin: 0;
+}
