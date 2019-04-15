@@ -20,12 +20,12 @@ self.__precacheManifest = [
     "url": "/nfl-draft-pwa/static/js/2.1527a7f9.chunk.js"
   },
   {
-    "revision": "d5e7e689e790dd5f60eaa438da65581f",
-    "url": "/nfl-draft-pwa/static/media/Framework7Icons-Regular.d5e7e689.eot"
-  },
-  {
     "revision": "0a51e7bba83f6ce6ef65b35a9ba4e0f2",
     "url": "/nfl-draft-pwa/static/media/Framework7Icons-Regular.0a51e7bb.woff2"
+  },
+  {
+    "revision": "d5e7e689e790dd5f60eaa438da65581f",
+    "url": "/nfl-draft-pwa/static/media/Framework7Icons-Regular.d5e7e689.eot"
   },
   {
     "revision": "ae28a51e6bb8e0061c5d",
@@ -36,10 +36,6 @@ self.__precacheManifest = [
     "url": "/nfl-draft-pwa/static/media/Framework7Icons-Regular.61bbf26d.ttf"
   },
   {
-    "revision": "e79bfd88537def476913f3ed52f4f4b3",
-    "url": "/nfl-draft-pwa/static/media/MaterialIcons-Regular.e79bfd88.eot"
-  },
-  {
     "revision": "012cf6a10129e2275d79d6adac7f3b02",
     "url": "/nfl-draft-pwa/static/media/MaterialIcons-Regular.012cf6a1.woff"
   },
@@ -48,11 +44,15 @@ self.__precacheManifest = [
     "url": "/nfl-draft-pwa/static/media/MaterialIcons-Regular.570eb838.woff2"
   },
   {
+    "revision": "e79bfd88537def476913f3ed52f4f4b3",
+    "url": "/nfl-draft-pwa/static/media/MaterialIcons-Regular.e79bfd88.eot"
+  },
+  {
     "revision": "353c305df288427cea1b",
     "url": "/nfl-draft-pwa/static/css/2.d40fa714.chunk.css"
   },
   {
-    "revision": "34523d087d1b896335f9ad1f67e6d55d",
+    "revision": "deb8184ef9f26c98b84aae7e921f31a5",
     "url": "/nfl-draft-pwa/index.html"
   }
 ];
