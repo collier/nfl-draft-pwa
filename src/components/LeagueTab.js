@@ -1,8 +1,8 @@
 import React from 'react';
 import { List, ListGroup, ListItem } from 'framework7-react';
-import useDraftPicks from '../hooks/useDraftPicks';
 import _groupBy from 'lodash/groupBy';
 import _map from 'lodash/map';
+import useDraftPicks from '../hooks/useDraftPicks';
 import { toOrdinal } from '../util';
 import teams from '../util/teams.json';
 
