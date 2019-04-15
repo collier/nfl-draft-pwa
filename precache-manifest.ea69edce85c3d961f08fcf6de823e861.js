@@ -40,19 +40,19 @@ self.__precacheManifest = [
     "url": "/nfl-draft-pwa/static/media/MaterialIcons-Regular.e79bfd88.eot"
   },
   {
-    "revision": "570eb83859dc23dd0eec423a49e147fe",
-    "url": "/nfl-draft-pwa/static/media/MaterialIcons-Regular.570eb838.woff2"
-  },
-  {
     "revision": "012cf6a10129e2275d79d6adac7f3b02",
     "url": "/nfl-draft-pwa/static/media/MaterialIcons-Regular.012cf6a1.woff"
+  },
+  {
+    "revision": "570eb83859dc23dd0eec423a49e147fe",
+    "url": "/nfl-draft-pwa/static/media/MaterialIcons-Regular.570eb838.woff2"
   },
   {
     "revision": "353c305df288427cea1b",
     "url": "/nfl-draft-pwa/static/css/2.d40fa714.chunk.css"
   },
   {
-    "revision": "809e16314b71ddc442e85a8870080f1f",
+    "revision": "34523d087d1b896335f9ad1f67e6d55d",
     "url": "/nfl-draft-pwa/index.html"
   }
 ];
