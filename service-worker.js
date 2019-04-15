@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/nfl-drafts-pwa/precache-manifest.0d1c80191da4b57effd5e552d57cfbd8.js"
+  "/nfl-draft-pwa/precache-manifest.b4e0a0b095c618a408c0f780e3f90234.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/nfl-drafts-pwa/index.html", {
+workbox.routing.registerNavigationRoute("/nfl-draft-pwa/index.html", {
   
   blacklist: [/^\/_/,/\/[^\/]+\.[^\/]+$/],
 });
