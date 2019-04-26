@@ -19,14 +19,34 @@ ReactDOM.render(<App />, document.getElementById('root'));
 // Asyncronously load the draft data in the background and cache it using 
 // localforage
 function fetchAndCacheDraftData(year) {
-  axios.get(`./data/${year}.json`).then(res => {
-    const serverPicks = res.data;
-    localforage.setItem(year, serverPicks);
+  return new Promise ((resolve, reject) => {
+    try {
+      axios.get(`./data/${year}.json`).then(res => {
+        const serverPicks = res.data;
+        localforage.setItem(year, serverPicks);
+        resolve (serverPicks);
+      });
+    } catch (e) {
+      reject (e);
+    }
   });
 }
-for(let year = 2013; year <= 2018; year++) {
-  fetchAndCacheDraftData(year+'');
-}
+(async () => {
+  try {
+    let all = await Promise.all ([2013, 2014, 2015, 2016, 2017, 2018].map (year => {
+      return fetchAndCacheDraftData (year);
+    }));
+    all = all.reduce ((cur, val) => {
+      return cur.concat (val);
+    }, []);
+    localforage.setItem ('all', all);
+    
+  } catch (e) {
+    for(let year = 2013; year <= 2018; year++) {
+      fetchAndCacheDraftData(year+'');
+    }
+  }
+}) ();
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.

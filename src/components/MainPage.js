@@ -11,13 +11,15 @@ import LeagueFilters from './LeagueFilters';
 import TeamFilters from './TeamFilters';
 import SearchFilters from './SearchFilters';
 import styles from '../styles/MainPage.module.css';
+import SearchTab from './SearchTab';
 
 function MainPage() {
   const [activeTab, setActiveTab] = useState('league');
   const [leagueYear, setLeagueYear] = useState('2018');
   const [teamId, setTeamId] = useState('');
   const [teamYear, setTeamYear] = useState('');
-
+  // communication between SearchFilter and SearchTab
+  const [query, setQuery] = useState ('');
   const yearOptions = _range(2013, 2019).reverse();
 
   return (
@@ -40,9 +42,9 @@ function MainPage() {
             yearOptions={yearOptions} 
           />
         </TabFilter>
-        {/* <TabFilter isActive={activeTab === 'search'}>
-          <SearchFilters />
-        </TabFilter> */}
+        <TabFilter isActive={activeTab === 'search'}>
+          <SearchFilters setQuery={setQuery} />
+        </TabFilter>
       </TabFilters>
       <Toolbar tabber labels bottom>
         <Link 
@@ -59,6 +61,13 @@ function MainPage() {
           iconMd="material:pets" 
           text="By Team" 
           onClick={() => setActiveTab('by-team')} 
+        />
+        <Link 
+          tabLink="#search" 
+          iconIos="f7:search" 
+          iconMd="material:search" 
+          text="Players" 
+          onClick={() => setActiveTab('search')} 
         />
         {/* <Link 
           tabLink="#search" 
@@ -79,6 +88,9 @@ function MainPage() {
         </Tab>
         <Tab id="by-team" className={cn('page-content', styles.teamTab)}>
           <TeamTab year={teamYear} teamId={teamId} />
+        </Tab>
+        <Tab id="search" className={cn('page-content', styles.leagueTab)}>
+          <SearchTab query={query} />
         </Tab>
         {/* <Tab id="search" className={cn('page-content', styles.searchTab)}>
           <EmptyTab />
