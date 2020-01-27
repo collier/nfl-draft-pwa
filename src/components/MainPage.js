@@ -47,7 +47,7 @@ function MainPage() {
       <Toolbar tabber labels bottom>
         <Link 
           tabLink="#league" 
-          iconIos="f7:library" 
+          iconIos="f7:square_stack_fill" 
           iconMd="material:list" 
           text="League" 
           onClick={() => setActiveTab('league')} 
