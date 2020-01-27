@@ -4,12 +4,12 @@ import cn from 'classnames';
 import _range from 'lodash/range';
 import LeagueTab from './LeagueTab';
 import TeamTab from './TeamTab';
-import EmptyTab from './EmptyTab';
+// import EmptyTab from './EmptyTab';
 import TabFilters from './TabFilters';
 import TabFilter from './TabFilter';
 import LeagueFilters from './LeagueFilters';
 import TeamFilters from './TeamFilters';
-import SearchFilters from './SearchFilters';
+// import SearchFilters from './SearchFilters';
 import styles from '../styles/MainPage.module.css';
 
 function MainPage() {

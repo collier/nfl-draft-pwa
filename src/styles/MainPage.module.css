@@ -2,7 +2,31 @@
 @value team-filters-height: 88px;
 @value search-filters-height: 44px;
 
-.leagueTab {
+/* .leagueTab {
+  padding-top: calc(calc(var(--f7-page-navbar-offset, 0px) + var(--f7-page-toolbar-top-offset, 0px) + var(--f7-page-subnavbar-offset, 0px) + var(--f7-page-searchbar-offset, 0px) + var(--f7-page-content-extra-padding-top, 0px) + var(--f7-safe-area-top, 0px) + var(--f7-safe-area-bottom, 0px)) + league-filters-height);
+}
+
+.teamTab {
+  padding-top: calc(calc(var(--f7-page-navbar-offset, 0px) + var(--f7-page-toolbar-top-offset, 0px) + var(--f7-page-subnavbar-offset, 0px) + var(--f7-page-searchbar-offset, 0px) + var(--f7-page-content-extra-padding-top, 0px) + var(--f7-safe-area-top, 0px) + var(--f7-safe-area-bottom, 0px)) + team-filters-height);
+}
+
+.searchTab {
+  padding-top: calc(calc(var(--f7-page-navbar-offset, 0px) + var(--f7-page-toolbar-top-offset, 0px) + var(--f7-page-subnavbar-offset, 0px) + var(--f7-page-searchbar-offset, 0px) + var(--f7-page-content-extra-padding-top, 0px) + var(--f7-safe-area-top, 0px) + var(--f7-safe-area-bottom, 0px)) + search-filters-height);
+} */
+
+/* .leagueTab {
+  padding-top: calc(calc(var(--f7-page-navbar-offset, 0px) + var(--f7-page-toolbar-top-offset, 0px) + var(--f7-page-subnavbar-offset, 0px) + var(--f7-page-searchbar-offset, 0px) + var(--f7-page-content-extra-padding-top, 0px) + var(--f7-safe-area-top, 0px)) + league-filters-height);
+}
+
+.teamTab {
+  padding-top: calc(calc(var(--f7-page-navbar-offset, 0px) + var(--f7-page-toolbar-top-offset, 0px) + var(--f7-page-subnavbar-offset, 0px) + var(--f7-page-searchbar-offset, 0px) + var(--f7-page-content-extra-padding-top, 0px) + var(--f7-safe-area-top, 0px)) + team-filters-height);
+}
+
+.searchTab {
+  padding-top: calc(calc(var(--f7-page-navbar-offset, 0px) + var(--f7-page-toolbar-top-offset, 0px) + var(--f7-page-subnavbar-offset, 0px) + var(--f7-page-searchbar-offset, 0px) + var(--f7-page-content-extra-padding-top, 0px) + var(--f7-safe-area-top, 0px)) + search-filters-height);
+} */
+
+/* .leagueTab {
   padding-top: calc(calc(var(--f7-page-navbar-offset, 0px) + var(--f7-page-toolbar-top-offset, 0px) + var(--f7-page-subnavbar-offset, 0px) + var(--f7-page-searchbar-offset, 0px) + var(--f7-page-content-extra-padding-top, 0px)) + league-filters-height);
 }
 
@@ -12,4 +36,16 @@
 
 .searchTab {
   padding-top: calc(calc(var(--f7-page-navbar-offset, 0px) + var(--f7-page-toolbar-top-offset, 0px) + var(--f7-page-subnavbar-offset, 0px) + var(--f7-page-searchbar-offset, 0px) + var(--f7-page-content-extra-padding-top, 0px)) + search-filters-height);
+} */
+
+.leagueTab {
+  padding-top: calc(calc(var(--f7-page-navbar-offset, 0px) + var(--f7-page-searchbar-offset, 0px) + var(--f7-page-content-extra-padding-top, 0px)) + league-filters-height);
+}
+
+.teamTab {
+  padding-top: calc(calc(var(--f7-page-navbar-offset, 0px) + var(--f7-page-searchbar-offset, 0px) + var(--f7-page-content-extra-padding-top, 0px)) + team-filters-height);
+}
+
+.searchTab {
+  padding-top: calc(calc(var(--f7-page-navbar-offset, 0px) + var(--f7-page-searchbar-offset, 0px) + var(--f7-page-content-extra-padding-top, 0px)) + search-filters-height);
 }

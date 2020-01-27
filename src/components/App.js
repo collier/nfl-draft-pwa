@@ -7,15 +7,13 @@ function App() {
     name: 'NFL Drafts',
     id: 'com.collier.nfldrafts',
     theme: 'auto',
-    iosTranslucentBars: false,
-    touch: {
-      fastClicks: true
-    }
+    autoDarkTheme: true,
+    iosTranslucentBars: false
   };
 
   return (
     <F7App params={f7params}>
-      <View main url="/">
+      <View main url="/" className="safe-areas">
         <MainPage />
       </View>
     </F7App>
